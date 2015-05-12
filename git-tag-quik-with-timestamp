@@ -1,0 +1,12 @@
+#!/bin/sh 
+# Usage: git-tag-quik-with-timestamp $tag_name $message  
+#
+
+CURRENT_DATE=`/bin/date +%Y-%m-%d-%H:%M:%S`
+TAG_FULL_NAME=$1-$CURRENT_DATE
+
+MESSAGE=$2
+
+/usr/bin/git tag -a $TAG_FULL_NAME -m $MESSAGE
+
+
