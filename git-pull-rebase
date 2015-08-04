@@ -1,0 +1,8 @@
+#!/bin/bash
+# Usage: git-pull-rebase
+#
+
+
+/usr/bin/git pull --rebase 
+
+
